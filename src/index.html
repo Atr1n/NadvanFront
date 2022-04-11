@@ -11,7 +11,12 @@
     <header class="header">
         <div class="container">
             <div class="header__logo">
-                <a href="#">Nadvan Logo</a>
+                <a href="#">
+                    <img src="assets/img/nadvan_logo.png" alt="Nadvan Logo">
+                </a>
+                <article>
+                    NADVAN
+                </article>
             </div>
         </div>
     </header>
@@ -21,9 +26,7 @@
             <div class="main__title">
                 <h1>Цифровые <br> решения для <br> бизнеса</h1>
             </div>
-            <div class="main__line">
-
-            </div>
+            <div class="main__line"></div>
             <div class="main__list">
                 <ul>
                     <li><span>Разработка:</span> веб-приложения, сайты, посадочные страницы, e-магазины, моб. приложения, CRM системы.</li>
@@ -37,35 +40,43 @@
     </main>
 
     <section class="works section">
-        <div class="container">
+        <div class="works__container">
             <div class="works__title">
                 <h2>Работы</h2>
             </div>
             <div class="works__content">
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
-                <div class="works__item">
-                    IMG
-                </div>
+                <a target="_blank" href="https://epc.group/" class="works__item">
+                    <img src="assets/img/epc.jpg" width="300" height="360" alt="Epc">
+                    <h3>Epc Group</h3>
+                </a>
+                <a target="_blank" href="https://forteleasing.kz/" class="works__item">
+                    <img src="assets/img/forte-thumb-450x570.jpg" width="300" height="360" alt="Forte">
+                    <h3>ForteLeasing</h3>
+                </a>
+                <a target="_blank" href="" class="works__item">
+                    <img src="assets/img/staron_thumb_1-450x500.jpg" width="300" height="360" alt="Staron">
+                    <h3>Staron Lotte</h3>
+                </a>
+                <a target="_blank" href="https://maralsay.kz/house/" class="works__item">
+                    <img src="assets/img/maralsai.jpg" width="300" height="360" alt="Maralsay">
+                    <h3>Maralsay</h3>
+                </a>
+                <a target="_blank" href="https://spectrecoffee.kz/" class="works__item">
+                    <img src="assets/img/spectre-450x290.jpg" width="450" height="290" alt="Spectre">
+                    <h3>Spectre Coffee</h3>
+                </a>
+                <a target="_blank" href="https://usl.kz/" class="works__item">
+                    <img src="assets/img/usl_thumb_2-450x360.jpg" width="450" height="360" alt="Usl">
+                    <h3>USL Kazakhstan</h3>
+                </a>
+                <a target="_blank" href="" class="works__item">
+                    <img src="assets/img/amzb_thumb_1-450x290.jpg" width="450" height="290" alt="Amazonka">
+                    <h3>Amazonka Bay</h3>
+                </a>
+                <a target="_blank" href="https://pictor.kz/" class="works__item">
+                    <img src="assets/img/pictor.png" alt="Pictor">
+                    <h3>Pictor</h3>
+                </a>
             </div>
             <div class="works__watch">
                 <span></span>
@@ -75,10 +86,9 @@
     </section>
 
     <section class="product section">
-        <div class="container">
+        <div class="product__container">
             <div class="product__content">
                 <div class="product__item">
-                    <img src="assets/img/product-img.jpg" alt="Продукт">
                     <img src="assets/img/product-img.jpg" alt="Продукт">
                 </div>
                 <div class="product__item">
@@ -288,19 +298,59 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback section">
         <div class="container">
-            
+            <article class="feedback__desc">
+                <h2>ДОВЕРЯЙТЕ ПРОФЕССИОНАЛАМ</h2>
+                <p>СОЗДАЕМ ПРОДУКТЫ ОТ ДУШИ</p>
+                <div class="feedback__line"></div>
+                <p>
+                    Исследуем - анализируем - рисуем прототип - креативим дизайн - программируем - тестируем
+                </p>
+            </article>
+            <div class="feedback__content">
+                <form action="#" class="feedback__form">
+                    <label class="feedback__form-label">
+                        <input class="input" type="text" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="feedback__form-label">
+                        <input id="phone" class="input" type="phone" placeholder="Ваш телефон" required>
+                    </label>
+                    <label class="feedback__form-label">
+                        <textarea class="textarea" name="textarea" cols="30" rows="10" placeholder="Расскажите про ваш проект"></textarea>
+                    </label>
+                    <button type="submit" class="feedback__form-btn">Отправить</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__item">
+                    <img src="assets/img/nadvan_logo.png" alt="Nadvan Logo">
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-desc">
+                        <h4>Нас легко найти:</h4>
+                        <p>г. Алматы — БЦ «Азия Мост», ул. Тимирязева 42к 15 1Б, офис 218</p>
+                        <a href="#">Мы в <span>2GIS</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="nav-bottom">
         <div class="container">
             <div class="nav-bottom__content">
                 <a href="#">Оставить заявку</a>
-                <a href="tel:77077051217">+7 707-705-12-17</a>
-                <p>copyright ©</p>
-                <p>2022 NADVAN Abo Group</p>
+                <a href="tel:77077051217">
+                    <img src="assets/img/phone.png" width="35" alt="">
+                    +7 707-705-12-17
+                </a>
+                <p>Nadvan Abo Group © 2022</p>
             </div>
         </div>
     </div>

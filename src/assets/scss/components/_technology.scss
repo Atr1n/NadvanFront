@@ -1,16 +1,24 @@
 .technology {
     &__content {
         display: grid;
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
         grid-gap: 2rem;
         margin-top: -2rem;
+        @media only screen and (max-width: 998px) {
+            margin-top: 0;
+        }
     }
     &__item {
+        @media only screen and (max-width: 998px) {
+            display: flex;
+            justify-content: center;
+        }
         img {
             opacity: .25;
             filter: grayscale(100%);
             cursor: pointer;
             transition: all .3s ease;
+            object-fit: cover;
             &:hover {
                 opacity: 1;
                 filter: grayscale(0%);
@@ -21,6 +29,10 @@
         display: flex;
         justify-content: space-between;
         margin-top: 4rem;
+        @media only screen and (max-width: 998px) {
+            margin-top: 2rem;
+            flex-direction: column;
+        }
         &-item {
             h4 {
                 margin-bottom: 2rem;
@@ -30,11 +42,20 @@
             p {
                 color: #c69c6d;
             }
+            img {
+                @media only screen and (max-width: 998px) {
+                    width: 300px;
+                }
+            }
         }
     }
     &__line {
         width: 1px;
         height: 100px;
         background-color: #8899a6;
+        @media only screen and (max-width: 998px) {
+            height: 60px;
+            margin: 1rem auto;
+        }
     }
 }

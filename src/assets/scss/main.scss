@@ -12,12 +12,11 @@
 @import 'components/products';
 @import 'components/services';
 @import 'components/technology';
+@import 'components/feedback';
 
 @import 'components/nav-bottom';
 
 @import 'components/footer';
-
-
 
 .container {
     width: 100%;
@@ -31,163 +30,11 @@
     }
 }
 
-.pages__desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    @media only screen and (max-width: 768px) {
-        text-align: left;
-        margin-bottom: 2rem;
-    }
-    h1 {
-        margin-bottom: 2rem;
-        @media only screen and (max-width: 768px) {
-            margin-bottom: 1rem;
-        }
-    }
-
-    p {
-        padding: 0 15rem;
-        @media only screen and (max-width: 768px) {
-            padding: 0;
-        }
-    }
-    &_about {
-        padding: 0 15rem;
-        @media only screen and (max-width: 768px) {
-            padding: 0;
-        }
-    }
-}
-
-.blue {
-    color: $blue;
-}
-
-.blue-bg {
-    background: $blue;
-}
-
-.white {
-    color: $white;
-}
-
-.white-bg {
-    background: $white;
-}
-
-.white-border {
-    padding: 0rem .8rem;
-    border: 1px solid $white;
-    border-radius: 20px;
-}
-
-.grey {
-    color: $grey;
-}
-
-.grey-bg {
-    background: $grey;
-}
-
-.black {
-    color: $black;
-}
-
-.black-border {
-    padding: 0rem .8rem;
-    border: 1px solid $black;
-    border-radius: 20px;
-}
-
-.black-bg {
-    background: $black;
-}
-
-.blue-bg {
-    background: $blue;
-}
-
 .section {
     padding: 3rem 0;
-}
-
-.section-blue-bg {
-    background: $blue;
-}
-
-.size60 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 73px;
-    color: $white;
-    @media only screen and (max-width: 768px) {
-        font-size: 24px;
-        line-height: 29px;
-        color: $blue;
+    @media only screen and (max-width: 998px) {
+        padding: 2rem 0;
     }
-}
-
-.size40 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 49px;
-    @media only screen and (max-width: 768px) {
-        font-size: 24px;
-        line-height: 29px;
-    }
-}
-
-.size24 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    @media only screen and (max-width: 768px) {
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
-
-.size16 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    @media only screen and (max-width: 768px) {
-        font-size: 14px;
-        line-height: 17px;
-    }
-}
-
-.size14 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.item-more {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-        text-decoration: underline;
-    }
-}
-
-
-.marquee {
-    margin-top: auto;
-}
-
-.marquee-content {
-    display: flex;
-    gap: 8rem;
 }
 
 html,body {

@@ -1,32 +1,60 @@
 .product {
     &__content {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-gap: 1rem;
+        padding-right: 3rem;
+        @media only screen and (max-width: 998px) {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 0 2rem;
+        }
     }
     &__item {
         img {
-            width: 500px;
+            width: 90%;
             margin-bottom: 2rem;
-            border-radius: 15px;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            @media only screen and (max-width: 998px) {
+                width: 100%;
+                border-radius: 20px;
+            }
         }
         &-desc {
             margin-bottom: 5rem;
+            @media only screen and (max-width: 998px) {
+                margin-bottom: 2rem;
+            }
             h2 {
                 font-size: 50px;
                 line-height: 50px;
                 font-weight: bold;
                 margin-bottom: 1rem;
+                @media only screen and (max-width: 998px) {
+                    font-size: 28px;
+                    line-height: 35px;
+                }
             }
             p {
                 font-size: 20px;
                 line-height: 40px;
                 margin-bottom: 2rem;
+                @media only screen and (max-width: 998px) {
+                    margin-bottom: 1rem;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
             }
         }
         &-lists {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 2rem;
+            @media only screen and (max-width: 998px) {
+                margin-top: 1rem;
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
         &-list {
             &-desc {
@@ -34,9 +62,15 @@
                     font-size: 18px;
                     font-weight: bold;
                     margin-bottom: 2rem;
+                    @media only screen and (max-width: 998px) {
+                        margin-bottom: 0.5rem;
+                    }
                 }
                 p {
                     color: #8899a6;
+                    @media only screen and (max-width: 998px) {
+                        color: #000;
+                    }
                 }
             }
         }

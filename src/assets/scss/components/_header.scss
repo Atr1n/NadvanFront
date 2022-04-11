@@ -1,13 +1,22 @@
 .header {
     position: fixed;
-    top: 0;
     width: 100%;
-    padding: 1rem;
+    top: 0;
+    padding: 0.8rem 0;
     background: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 2;
     &__logo {
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img {
+            width: 40px;
+        }
+        article {
+            font-size: 18px;
+            font-weight: 600;
+        }
     }
 }
