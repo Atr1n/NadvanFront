@@ -9,14 +9,9 @@
     &__logo {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 1rem;
         img {
-            width: 40px;
-        }
-        article {
-            font-size: 18px;
-            font-weight: 600;
+            width: 150px;
+            cursor: pointer;
         }
     }
 }

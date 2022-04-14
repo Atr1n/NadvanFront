@@ -13,7 +13,6 @@
     }
     &__title {
         margin-bottom: 5rem;
-       
         @media only screen and (max-width: 556px) {
             margin-bottom: 1rem;
         }
@@ -54,10 +53,12 @@
             }
         }
         &-icon {
-            margin-top: 1rem;
-            margin-bottom: 3rem;
+            margin: 2.3rem 0;
             @media only screen and (max-width: 556px) {
-                margin-bottom: 2rem;
+                margin: 2rem 0;
+            }
+            i {
+                font-size: 25px;
             }
         }
         &-desc {
@@ -66,7 +67,7 @@
                 font-weight: bold;
                 margin-bottom: 2rem;
                 @media only screen and (max-width: 556px) {
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                 }
             }
             p {
@@ -90,12 +91,16 @@
             }
         }
         &-icon {
-            margin-top: 1rem;
-            margin-bottom: 3rem;
+            display: flex;
+            gap: 2rem;
+            margin: 2.3rem 0;
             color: #fff;
             @media only screen and (max-width: 556px) {
-                margin-bottom: 2rem;
+                margin: 2rem 0;
                 color: #000;
+            }
+            i {
+                font-size: 25px;
             }
         }
         &-desc {
@@ -107,6 +112,9 @@
                 font-size: 18px;
                 font-weight: bold;
                 margin-bottom: 2rem;
+                @media only screen and (max-width: 556px) {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }

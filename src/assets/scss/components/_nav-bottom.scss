@@ -2,10 +2,19 @@
     position: fixed;
     width: 100%;
     bottom: 0;
-    padding: 0.8rem 0;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 2;
+    &__link {
+        padding: 0.5rem 1.5rem;
+        background: #8899a6;
+        color: #fff;
+        transition: all 0.3s ease;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            color: #000;
+        }
+    }
     &__content {
         display: flex;
         justify-content: center;
@@ -21,18 +30,6 @@
             transition: color 0.3s ease;
             &:hover {
                 color: blue;
-            }
-            &:first-child {
-                padding: 0.5rem 1rem;
-                border-radius: 10px;
-                background: #8899a6;
-                color: #fff;
-                transition: all 0.3s ease;
-                &:hover {
-                    background: #fff;
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                    color: #8899a6;
-                }
             }
             img {
                 @media only screen and (max-width: 998px) {
