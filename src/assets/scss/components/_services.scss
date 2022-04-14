@@ -8,7 +8,6 @@
         @media only screen and (max-width: 556px) {
             background: none;
             padding: 0;
-            padding-bottom: 2rem;
         }
     }
     &__title {
@@ -45,11 +44,12 @@
         &-numb {
             position: absolute;
             top: -25px;
-            color: #8899a6;
             font-size: 30px;
             transform: rotate(-90deg);
+            opacity: 0.8;
             @media only screen and (max-width: 556px) {
                 display: none;
+                opacity: 1;
             }
         }
         &-icon {
@@ -71,9 +71,9 @@
                 }
             }
             p {
-                color: #8899a6;
+                opacity: 0.8;
                 @media only screen and (max-width: 556px) {
-                    color: #000;
+                    opacity: 1;
                 }
             }
         }

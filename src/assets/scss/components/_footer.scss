@@ -22,7 +22,10 @@
             }
             p {
                 margin: 1rem 0;
-                color: #8899a6;
+                opacity: 0.8;
+                @media only screen and (max-width: 556px) {
+                    opacity: 1;
+                }
             }
             a {
                 span {

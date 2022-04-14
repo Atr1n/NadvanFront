@@ -144,7 +144,7 @@
             </div>
             <div class="services__content">
                 <div class="services__item">
-                    <div class="services__item-numb">1</div>
+                    <h4 class="services__item-numb">1</h4>
                     <div class="services__item-icon">
                         <i class="un-fa-icon-cubes"></i>
                     </div>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
                 <div class="services__item">
-                    <div class="services__item-numb">2</div>
+                    <h4 class="services__item-numb">2</h4>
                     <div class="services__item-icon">
                         <i class="un-fa-icon-dropbox"></i>
                     </div>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="services__item">
-                    <div class="services__item-numb">3</div>
+                    <h4 class="services__item-numb">3</h4>
                     <div class="services__item-icon">
                         <i class="un-fa-icon-connectdevelop"></i>
                     </div>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="services__item">
-                    <div class="services__item-numb">4</div>
+                    <h4 class="services__item-numb">4</h4>
                     <div class="services__item-icon">
                         <i class="un-fa-icon-cart-plus"></i>
                     </div>
@@ -199,7 +199,7 @@
             <div class="container">
                 <div class="services__content">
                     <div class="services__item-2">
-                        <div class="services__item-2-numb">5</div>
+                        <h4 class="services__item-2-numb">5</h4>
                         <div class="services__item-2-icon">
                             <i class="un-fa-icon-cogs"></i>
                         </div>
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                     <div class="services__item-2">
-                        <div class="services__item-2-numb">6</div>
+                        <h4 class="services__item-2-numb">6</h4>
                         <div class="services__item-2-icon">
                             <i class="un-fa-icon-at"></i>
                         </div>
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                     <div class="services__item-2">
-                        <div class="services__item-2-numb">7</div>
+                        <h4 class="services__item-2-numb">7</h4>
                         <div class="services__item-2-icon">
                             <i class="un-fa-icon-android"></i>
                             <i class="un-fa-icon-apple"></i>
@@ -237,7 +237,7 @@
                         </div>
                     </div>
                     <div class="services__item-2">
-                        <div class="services__item-2-numb">8</div>
+                        <h4 class="services__item-2-numb">8</h4>
                         <div class="services__item-2-icon">
                             <i class="un-fa-icon-clipboard"></i>
                         </div>
@@ -258,7 +258,7 @@
         <div class="product__container">
             <div class="product__content">
                 <div class="product__item">
-                    <img src="assets/img/product-img.jpg" alt="Продукт">
+                    <img width="828" height="826" src="assets/img/product-img.jpg" alt="Продукт">
                 </div>
                 <div class="product__item">
                     <div class="product__item-desc">
@@ -378,15 +378,34 @@
                 </p>
             </article>
             <div class="feedback__content">
-                <form action="#" class="feedback__form">
+                <form action="" class="feedback__form">
                     <label class="feedback__form-label">
-                        <input class="input" type="text" placeholder="Ваше имя" required>
+                        <input
+                            class="input" 
+                            id="name"
+                            name="name" 
+                            type="name"
+                            placeholder="Ваше имя" 
+                        >
                     </label>
                     <label class="feedback__form-label">
-                        <input id="phone" class="input" type="phone" placeholder="Ваш телефон" required>
+                        <input 
+                            class="input" 
+                            id="phone" 
+                            name="phone"
+                            type="phone" 
+                            placeholder="Ваш телефон" 
+                        >
                     </label>
                     <label class="feedback__form-label">
-                        <textarea class="textarea" name="textarea" cols="30" rows="10" placeholder="Расскажите про ваш проект"></textarea>
+                        <textarea 
+                            class="textarea" 
+                            id="textarea"
+                            name="textarea" 
+                            cols="30" 
+                            rows="10" 
+                            placeholder="Расскажите про ваш проект">
+                        </textarea>
                     </label>
                     <button type="submit" class="feedback__form-btn">Отправить</button>
                 </form>
@@ -412,22 +431,20 @@
     </footer>
 
     <div class="nav-bottom">
-        <div class="container">
-            <nav class="nav-bottom__content">
-                <script data-b24-form="click/5/uq0isu" data-skip-moving="true">
-                    (function(w,d,u){
-                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                    })(window,document,'https://cdn-ru.bitrix24.ru/b14275520/crm/form/loader_5.js');
-                </script>
-                <a class="nav-bottom__link" href="#">Оставить заявку</a>
-                <a href="tel:77077051217">
-                    <img src="assets/img/phone.png" width="35" height="35" alt="Телефон">
-                    +7 707-705-12-17
-                </a>
-                <p>Nadvan Abo Group © 2022</p>
-            </nav>
-        </div>
+        <nav class="nav-bottom__content">
+            <script data-b24-form="click/5/uq0isu" data-skip-moving="true">
+                (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                })(window,document,'https://cdn-ru.bitrix24.ru/b14275520/crm/form/loader_5.js');
+            </script>
+            <button class="nav-bottom__link" href="#">Оставить заявку</button>
+            <a href="tel:77077051217">
+                <img src="assets/img/phone.png" width="35" height="35" alt="Телефон">
+                +7 707-705-12-17
+            </a>
+            <p>Nadvan ABO Group © 2022</p>
+        </nav>
     </div>
 
 </body>

@@ -10,6 +10,11 @@
         }
     }
     &__item {
+        &:first-child {
+            @media only screen and (max-width: 556px) {
+                order: 1;
+            }
+        }
         img {
             width: 90%;
             margin-bottom: 2rem;
@@ -18,6 +23,7 @@
             border-bottom-right-radius: 20px;
             @media only screen and (max-width: 998px) {
                 width: 100%;
+                height: 100%;
                 border-radius: 20px;
             }
         }
@@ -67,9 +73,9 @@
                     }
                 }
                 p {
-                    color: #8899a6;
-                    @media only screen and (max-width: 998px) {
-                        color: #000;
+                    opacity: 0.8;
+                    @media only screen and (max-width: 556px) {
+                        opacity: 1;
                     }
                 }
             }

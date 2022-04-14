@@ -55,6 +55,8 @@ body {
 	padding: 0;
 	margin: 0;
 	font-size: $size16;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
