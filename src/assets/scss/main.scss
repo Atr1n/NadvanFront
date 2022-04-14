@@ -39,6 +39,7 @@
 }
 
 html,body {
+    font-family: $Montserrat;
     @media only screen and (max-width: 768px) {
         overflow-x: hidden;
     }
@@ -48,7 +49,6 @@ html {
 	height: 100%;
 	line-height: $mainLineHeight;
 	letter-spacing: 0.01em;
-    font-family: $mainFont;
 }
 
 body {
@@ -57,7 +57,6 @@ body {
 	font-size: $size16;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    font-family: $mainFont;
 }
 
 *,
