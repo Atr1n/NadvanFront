@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded',()=>{
                 trigger: '.works__content',
                 start: 'top 100%',
                 end: 'bottom 90%',
-                scrub: 1
+                //scrub: 1
+                once: true
             },
             x: -150,
             rotateY: 180,
@@ -178,23 +179,24 @@ function wrapLetters(text, delimiter){
     let arr = String(text).split(delimiter)
 
     let result = ''
-    let isBrTag = false
+    let isTag = false
     let arrLength = arr.length;
 
     arr.forEach((letter, index) => {
-        //Если встречаем тэг <br> --START--
+        //Если встречаем тэг --START--
         if(letter == '<'){
-            isBrTag = true
-            result += `<span aria-hidden="true" class="letter-wrapper"><br></span>`
+            isTag = true
         }
         if(letter == '>'){
-            isBrTag = false
+            result += `${letter}`
+            isTag = false
             return
         }
-        if(isBrTag){
+        if(isTag){
+            result += `${letter}`
             return
         }
-        //Если встречаем тэг <br> --END--
+        //Если встречаем тэг --END--
 
         if(index == arrLength - 1){
             result += `<span aria-hidden="true" class="letter-wrapper">${letter}</span>`
