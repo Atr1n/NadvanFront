@@ -9,22 +9,18 @@
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        ym(72494713, "init", {
+    ym(72494713, "init", {
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true,
             webvisor:true
-        });
+    });
     </script>
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/72494713" style="position:absolute; left:-9999px;">
-        </div>
-    </noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/72494713" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
 </head>
@@ -384,6 +380,7 @@
                             name="name"
                             type="name"
                             placeholder="Ваше имя"
+                            required
                         >
                     </label>
                     <label class="feedback__form-label">
@@ -393,6 +390,7 @@
                             name="phone"
                             type="phone"
                             placeholder="Ваш телефон"
+                            required
                         >
                     </label>
                     <label class="feedback__form-label">
@@ -402,11 +400,16 @@
                             name="textarea"
                             cols="30"
                             rows="10"
-                            placeholder="Расскажите про ваш проект">
-                        </textarea>
+                            placeholder="Расскажите про ваш проект"
+                            required
+                        ></textarea>
                     </label>
                     <button type="submit" class="feedback__form-btn">Отправить</button>
                 </form>
+                <div class="feedback__response">
+                    <p class="feedback__suc" id="successmessage"></p>
+                    <p class="feedback__err" id="errormessage"></p>
+                </div>
             </div>
         </div>
     </section>

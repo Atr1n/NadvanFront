@@ -9,9 +9,29 @@
         margin-top: 2rem;
         padding: 2rem 0;
     }
-    &__desc {
-        margin-bottom: 2rem;
+    &__response {
+        display: grid;
+        place-content: center;
+        grid-gap: 1rem;
+        font-size: 31px;
         text-align: center;
+        @media only screen and (max-width: 556px) {
+            font-size: 18px;
+            grid-gap: 0;
+        }
+    }
+    &__suc {
+        color: green;
+    }
+    &__err {
+        color: red;
+    }
+    &__desc {
+        margin-bottom: 3rem;
+        text-align: center;
+        @media only screen and (max-width: 998px) {
+            margin-bottom: 0;
+        }
         h2 {
             font-size: 50px;
             line-height: 60px;
@@ -42,7 +62,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 3rem;
         padding: 2rem 3rem;
         @media only screen and (max-width: 998px) {
             margin-top: 0;

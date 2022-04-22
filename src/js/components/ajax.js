@@ -1,28 +1,45 @@
 import $ from 'jquery'
 
 $(document).ready(function() {
-    $('.feedback__form').submit(function(event) {
-        event.preventDefault()
+  let form = $('.feedback__form')
 
-        let name = $('#name').val()
+  form.submit(function(event) {
+    event.preventDefault()
 
-        let formData = {
-            name: $('#name').val(),
-            phone: $('#phone').val(),
-            notes: $('#textarea').val(),
-            title: `Заявка с Nadvan.kz от ${name}`
-        }
+    let submit = $('.feedback__form-btn')
 
-        $.ajax({
-            type: 'POST',
-            url: './assets/php/form-callback.php',
-            data: formData,
-            headers: {},
-            success: function(result) {
-                //Здесь функция при успешной отправке заявки
-            }
-        }).done(function(data) {
-            console.log(data)
-        })
+    submit.prop('disabled', true)
+
+    let valid = true
+
+    if (!valid) {
+      submit.prop('disabled', false)
+    }
+
+    let name = $('#name').val()
+
+    let formData = {
+      name: $('#name').val(),
+      phone: $('#phone').val(),
+      notes: $('#textarea').val(),
+      title: `Заявка с Nadvan.kz от ${name}`
+    }
+
+    $.ajax({
+      type: 'POST',
+      url: './assets/php/form-callback.php',
+      data: formData,
+      headers: {},
+      success: function() {
+        let suc = $('#successmessage')
+        suc.text('Ваша заявка успешно отправлена!')
+
+        form.hide(2000)
+      },
+      error: function() {
+        let err = $('#errormessage')
+        err.text('Произошла ошибка! Попробуйте еще раз.')
+      },
     })
+  })
 })
